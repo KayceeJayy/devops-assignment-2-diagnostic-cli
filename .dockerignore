@@ -1,0 +1,14 @@
+.git
+.gitignore
+.github
+logs/
+*.log
+*.tmp
+*.swp
+*~
+.env
+.env.*
+__pycache__/
+README.md
+grade.sh
+test.sh
