@@ -38,7 +38,7 @@ system_info() {
 
     echo "===== SYSTEM DIAGNOSTICS ====="
     printf 'Hostname: %s\n' "$(hostname)"
-    printf 'User:     %s\n' "$(id -un)"
+    printf 'User:     %s\n' "$(id -un 2>/dev/null || id -u)"
     printf 'Date:     %s\n' "$(date -Is)"
     printf 'OS:       %s\n' "$os"
     printf 'Kernel:   %s\n' "$(uname -r)"
